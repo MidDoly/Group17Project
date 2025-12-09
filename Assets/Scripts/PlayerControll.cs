@@ -29,15 +29,26 @@ public class PlayerControll : MonoBehaviour
         move.Enable();
         fire = playerControls.Player.Attack;
         fire.Enable();
+        fire.performed += OnAttack;
         jump = playerControls.Player.Jump;
         jump.Enable();
     }
-    
+
     void OnDisable()
     {
         move.Disable();
         fire.Disable();
+        fire.performed -= OnAttack;
         jump.Disable();
+    }
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        Debug.Log("Attack performed");
+        DoAttack();
+    }
+    private void DoAttack()
+    {
+        
     }
     void Start()
     {

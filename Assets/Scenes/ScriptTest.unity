@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 921607554}
   - component: {fileID: 921607553}
   - component: {fileID: 921607555}
+  - component: {fileID: 921607556}
   m_Layer: 0
   m_Name: Hero_0
   m_TagString: Untagged
@@ -415,6 +416,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0.027354121, y: 0.5625}
   m_Size: {x: 0.94529176, y: 1.125}
   m_Direction: 0
+--- !u!95 &921607556
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921607550}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6807c0cb73efb4b4fab968f0bdb35d18, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
