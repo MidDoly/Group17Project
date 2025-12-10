@@ -16,10 +16,12 @@ public class PlayerControll : MonoBehaviour
     private InputAction move;
     private InputAction fire;
     private InputAction jump;
+    private Animator anim;
     private float ySpeed = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        anim = GetComponent<Animator>();
         playerControls = new InputSystem_Actions();
     }
 
@@ -48,7 +50,10 @@ public class PlayerControll : MonoBehaviour
     }
     private void DoAttack()
     {
-        
+        if (anim != null)
+        {
+            anim.SetTrigger("Fire");
+        }
     }
     void Start()
     {
