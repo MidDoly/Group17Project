@@ -10,6 +10,12 @@ public abstract class AbstractGenerator : MonoBehaviour
     [SerializeField]
     protected Vector2Int startPosition = Vector2Int.zero;
 
+    // Thêm đoạn này vào bên trong class AbstractGenerator
+    private void Start()
+    {
+        GenerateDungeon();
+    }
+
     public void GenerateDungeon()
     {
         tilemapVisualizer.Clear();

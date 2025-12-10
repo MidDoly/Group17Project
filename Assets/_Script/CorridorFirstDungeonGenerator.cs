@@ -92,7 +92,7 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         int roomToCreateCount = Mathf.RoundToInt(potentialRoomPositions.Count * roomPercent);
 
         List<Vector2Int> roomsToCreate = potentialRoomPositions.OrderBy(x => Guid.NewGuid()).Take(roomToCreateCount).ToList();
-        //ClearRoomData();
+        
 
         foreach (var roomPosition in roomsToCreate)
         {
@@ -102,18 +102,6 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         }
         return roomPositions;
     }
-
-    /*private void ClearRoomData()
-    {
-        roomsDictionary.Clear();
-        roomColors.Clear();
-    }
-
-    private void SaveRoomData(Vector2Int roomCenter, HashSet<Vector2Int> roomFloor)
-    {
-        roomsDictionary[roomPosition] = roomFloor;
-        roomColors.Add(UnityEngine.Random.ColorHSV());
-    }*/
 
     private List<List<Vector2Int>> CreateCorridors(HashSet<Vector2Int> floorPositions, HashSet<Vector2Int> potentialRoomPositions)
     {
@@ -129,7 +117,6 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
             var thickCorridor = IncreaseCorridorBrush3by3(corridor);
             floorPositions.UnionWith(thickCorridor);
         }
-        //corridorPositions = new HashSet<Vector2Int>(floorPositions);
         return corridors;
     }
     
