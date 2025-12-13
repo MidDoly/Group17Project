@@ -9,7 +9,47 @@ AssetOrigin:
   uploadId: 693043
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Confuse
+    second: {fileID: 7400000, guid: 90de0654ce2e95f4dad2a0da55c48cd7, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: 0a5e629f90b3a7c4893abc4abe6fcf6d, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Move
+    second: {fileID: 7400000, guid: 759c018b4e0341c49b4376fe7c625ff4, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: None
+    second: {fileID: 7400000, guid: 6e17f0b9ddf453b48b23707d94ffc27e, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Sit
+    second: {fileID: 7400000, guid: a878b650babbb2b488d35d70d3e595e2, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Stay
+    second: {fileID: 7400000, guid: 6884935340dcaaf449150e85b66fdf29, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Think
+    second: {fileID: 7400000, guid: bc08cea1341a4bc44905149600d49276, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Use
+    second: {fileID: 7400000, guid: ff580f8fa3b4f0446b30958210466355, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -109,7 +149,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638493930716497791
+  platformSettingsDirtyTick: 639012487899868959
   textureAssetName: 
   singleSpriteImportData:
   - name: 

@@ -7,6 +7,7 @@ public class PlayerControll : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float moveSpeed = 5.0f;
+    public float characterSpeed;
     public float jumpStartingSpeed = 3.0f;
     public float fallingAcceleration = 0.98f;
     private const float groundPosition = 0f;
@@ -70,6 +71,8 @@ public class PlayerControll : MonoBehaviour
         
         if (moveDirection.x == 0) playerVelocity = new Vector2(0, ySpeed);
         else playerVelocity = new Vector2(moveDirection.x / Math.Abs(moveDirection.x) * moveSpeed, ySpeed);
+        characterSpeed = rb.linearVelocity.magnitude;
+        anim.SetFloat("Speed", characterSpeed, 0.1f, Time.deltaTime);
     }
     
     void FixedUpdate()

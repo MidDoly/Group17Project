@@ -377,6 +377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControll
   rb: {fileID: 921607553}
   moveSpeed: 5
+  characterSpeed: 0
   jumpStartingSpeed: 14
   fallingAcceleration: 0.15
 --- !u!70 &921607555
