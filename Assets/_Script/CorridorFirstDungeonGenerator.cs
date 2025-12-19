@@ -49,6 +49,16 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         tilemapVisualizer.PaintFloorTiles(floorPositions);
         WallGenerator.CreateWalls(floorPositions, tilemapVisualizer);
 
+        DungeonEnemySpawner spawner = GetComponent<DungeonEnemySpawner>();
+        if (spawner != null)
+        {
+            spawner.SpawnEnemies(floorPositions);
+        }
+        else
+        {
+            Debug.LogError("Chưa gắn script DungeonEnemySpawner vào Game Object này!");
+        }
+
     }
 
     private void CreateRoomsAtDeadEnd(List<Vector2Int> deadEnds, HashSet<Vector2Int> roomFloors)
